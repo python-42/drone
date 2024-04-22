@@ -1,0 +1,30 @@
+plugins {
+	id 'java'
+
+	id 'org.openjfx.javafxplugin' version '0.1.0'
+}
+
+group = 'r6.drone'
+version = '0.0.1-SNAPSHOT'
+
+java {
+	sourceCompatibility = '17'
+}
+
+javafx {
+    version = "22"
+    modules = [ 'javafx.controls', 'javafx.fxml', 'javafx.media' ]
+}
+
+repositories {
+	mavenCentral()
+	jcenter()
+}
+
+dependencies {
+	implementation project(":common")
+	//implementation 'com.github.WilliamAHartman:Jamepad:1.4.0'
+	implementation 'com.badlogicgames.jamepad:jamepad:2.30.0.0'
+
+  	implementation "uk.co.electronstudio.sdl2gdx:sdl2gdx:1.0.4"
+}

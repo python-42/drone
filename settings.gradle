@@ -1,0 +1,4 @@
+rootProject.name = 'r6-drone-complete'
+
+include 'common'
+include 'desktop'
